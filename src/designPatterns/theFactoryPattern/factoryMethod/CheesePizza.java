@@ -1,16 +1,19 @@
-package designPatterns.theFactoryPattern.simpleFactory;
+package designPatterns.theFactoryPattern.factoryMethod;
 
-import designPatterns.theFactoryPattern.factoryMethod.PizzaFactory;
+import designPatterns.theFactoryPattern.simpleFactory.Constants;
+import designPatterns.theFactoryPattern.simpleFactory.Pizza;
 
 /**
  * Created by liufengfang on 2018/7/8.
  */
-public class CheesePizza implements Pizza{
+public class CheesePizza implements Pizza {
     private Constants.pizzaSize size;
+    private String region;
 
-    public CheesePizza(Constants.pizzaSize size){
+    public CheesePizza(Constants.pizzaSize size, String region){
         this.size = size;
-        System.out.println("created " + size + "cheese Pizza");
+        this.region = region;
+        System.out.println(region + " store created " + size + " cheese Pizza");
     }
 
     @Override
@@ -41,11 +44,8 @@ public class CheesePizza implements Pizza{
     public static final PizzaFactory NEWYORK_PIZZAFACORY = new PizzaFactory(){
         @Override
         public Pizza createPizza(Constants.pizzaSize size) {
-            Pizza pizza=new CheesePizza(size);
-            pizza.prepare();
-            pizza.bake();
-            pizza.cut();
-            pizza.box();
+            Pizza pizza=new CheesePizza(size,"NewYork");
+
             return pizza;
         }
     };
@@ -53,13 +53,8 @@ public class CheesePizza implements Pizza{
     public static final PizzaFactory TOKYO_PIZZAFACORY = new PizzaFactory(){
         @Override
         public Pizza createPizza(Constants.pizzaSize size) {
-            Pizza pizza=new CheesePizza(size);
-            pizza.prepare();
-            pizza.prepare();
-            pizza.bake();
-            pizza.cut();
-            pizza.cut();
-            pizza.box();
+            Pizza pizza=new CheesePizza(size,"Tokyo");
+
             return pizza;
         }
     };
