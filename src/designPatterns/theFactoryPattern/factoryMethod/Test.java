@@ -2,6 +2,7 @@ package designPatterns.theFactoryPattern.factoryMethod;
 
 
 import designPatterns.theFactoryPattern.simpleFactory.Constants;
+import designPatterns.theFactoryPattern.simpleFactory.Customer;
 import designPatterns.theFactoryPattern.simpleFactory.Pizza;
 
 /**

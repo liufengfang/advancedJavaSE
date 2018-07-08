@@ -7,6 +7,7 @@ import designPatterns.theFactoryPattern.simpleFactory.PizzaCreator;
 
 /**
  * Created by liufengfang on 2018/7/8.
+ * 工厂方法总结:把对象的创建放到一个单独的类里面，
  */
 public class PizzaStore {
 
