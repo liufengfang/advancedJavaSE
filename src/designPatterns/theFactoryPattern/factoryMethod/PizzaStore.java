@@ -27,4 +27,11 @@ public class PizzaStore {
         return pizza;
     }
 
+    //¸üÓÅ½â
+    public Pizza orderPizza(PizzaFactory factory,Constants.pizzaSize size) {
+        Pizza pizza = null;
+        pizza = factory.createPizza(Constants.pizzaSize.MAX);
+        return pizza;
+    }
+
 }
