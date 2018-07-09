@@ -16,9 +16,12 @@ public class Singleton {
         this.name = name;
     }
 
-    //    static {
+    //init on Class loading
+//    static {
 //        UNIQUEINSTANCE = new Singleton();
 //    }
+
+    //lazy instantiation
     private Singleton getInstainceWithName() {
         if (null == UNIQUEINSTANCE) {
             UNIQUEINSTANCE = new Singleton();
