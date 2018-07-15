@@ -5,8 +5,8 @@ package effectiveJava.item26;
  */
 public class StackTest {
     public static void main(String[] args) {
-//        testGenericStack();
-        testNoneGenericStack();
+        testGenericStack();
+//        testNoneGenericStack();
     }
 
     public static void testNoneGenericStack(){
@@ -24,5 +24,15 @@ public class StackTest {
 
     public static void testGenericStack(){
         System.out.println("testing genericStack");
+        GenericStack<String> stack = new GenericStack<String>();
+
+        stack.insert("A");
+        stack.insert("B");
+        stack.insert("C");
+        stack.insert("D");
+        stack.insert("E");
+        System.out.println(stack);
+        System.out.println(stack.pop());
+        System.out.println(stack.toString());
     }
 }
