@@ -21,6 +21,11 @@ public class AppleEnum {
         public int cost(){
             return price * amount;
         }
+
+        @Override
+        public String toString() {
+            return "instance of AE : " + super.toString();
+        }
     }
 
     public static void main(String[] args) {
