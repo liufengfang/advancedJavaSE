@@ -23,8 +23,8 @@ public class NutritionFacts {
         private int sodium = 0;
         private int carbohydrate = 0;
 
-        public Builder(int servingSzie, int serings) {
-            this.servingSize = servingSzie;
+        public Builder(int servingSize, int serings) {
+            this.servingSize = servingSize;
             this.servings = serings;
         }
 
