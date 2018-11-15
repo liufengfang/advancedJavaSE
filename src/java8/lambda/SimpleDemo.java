@@ -6,7 +6,7 @@ import java.util.function.ToIntFunction;
 /**
  * Created by liufengfang on 2018/11/15.
  */
-public class simple {
+public class SimpleDemo {
     public static void main(String[] args) {
 
         String s1 = "g";
