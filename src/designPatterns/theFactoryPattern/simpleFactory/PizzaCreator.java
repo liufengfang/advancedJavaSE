@@ -3,6 +3,7 @@ package designPatterns.theFactoryPattern.simpleFactory;
 /**
  * Created by liufengfang on 2018/7/8.
  */
+//¼òµ¥¹¤³§
 public class PizzaCreator {
 
     public Pizza create(String name, Constants.pizzaSize size){
