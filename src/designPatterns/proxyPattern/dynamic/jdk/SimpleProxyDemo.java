@@ -15,7 +15,10 @@ class RealObject implements Interface {
         System.out.println("somethingElse " + arg);
     }
 }
-
+/**
+ * 简单代理
+ * --也称为静态代理。与java中的组合(compose)类似，只不过代理类和被代理类实现相同的接口。
+ * */
 class SimpleProxy implements Interface {
     private Interface proxied;
 
