@@ -8,6 +8,7 @@ public class Room {
     private StateInterface blankState;
     private StateInterface bookedState;
     private StateInterface manLivedState;
+    private ForPrepareState forPrepareState;
 
     //¼ÇÂ¼µ±Ç°×´Ì¬
     private StateInterface state;
@@ -17,6 +18,7 @@ public class Room {
         blankState = new BlankState(this);
         bookedState = new BookedState(this);
         manLivedState = new ManLivedState(this);
+        forPrepareState = new ForPrepareState();
 
         this.state = blankState;
     }
@@ -69,5 +71,13 @@ public class Room {
 
     public void setManLivedState(StateInterface manLivedState) {
         this.manLivedState = manLivedState;
+    }
+
+    public ForPrepareState getForPrepareState() {
+        return forPrepareState;
+    }
+
+    public void setForPrepareState(ForPrepareState forPrepareState) {
+        this.forPrepareState = forPrepareState;
     }
 }

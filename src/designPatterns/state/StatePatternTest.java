@@ -23,5 +23,10 @@ public class StatePatternTest {
         for (int i = 0; i < 2; i++) {
             rooms[i].checkInRoom();
         }
+
+        System.out.println("--------------");
+        Room roomForPrepare = new Room();
+        roomForPrepare.setState(roomForPrepare.getForPrepareState());
+        roomForPrepare.bookRoom();
     }
 }
