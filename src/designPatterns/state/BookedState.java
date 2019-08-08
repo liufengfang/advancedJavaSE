@@ -2,6 +2,7 @@ package designPatterns.state;
 
 /**
  * Created by liufengfang on 2019/8/8.
+ * ÒÑÔ¤¶©
  */
 public class BookedState implements StateInterface{
     private Room room;
