@@ -6,6 +6,8 @@ import java.lang.reflect.Proxy;
 
 /**
  * Created by liufengfang on 2019/4/4.
+ * 更多了解，请参考《Mybatis技术内幕》徐郡明著，2.4.3节代理模式与jdk动态代理。
+ *
  */
 public class IntrestingDynamicProxyHandler implements InvocationHandler {
     Object proxied;
