@@ -24,10 +24,8 @@ public class CglibDemo2 {
 }
 
 class LogDelegate {
-    Object proxied;
 
     public Object createProxy(final Object proxied) {
-        this.proxied = proxied;
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(proxied.getClass());
         enhancer.setCallback(new MethodInterceptor() {
